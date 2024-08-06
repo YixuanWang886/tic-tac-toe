@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    font-size: 50px;
+    margin: 20px;
+}
+
+.cell {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+#game_panel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300px;
+}
+
+.cell:active {
+    background-color: yellow;
+    border: 2px solid red;
+}
+
+#status {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
